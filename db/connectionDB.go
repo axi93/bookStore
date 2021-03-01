@@ -11,7 +11,7 @@ import (
 //MongoCN -It is the object of connection to the DB
 var MongoCN = ConnectionDB()
 
-var clientOptions = options.Client().ApplyURI("mongodb+srv://admin:Lv3s5olo@bookstore.9ehba.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+var clientOptions = options.Client().ApplyURI("MONGO_URL")
 
 //ConnectionDB - Makes the connection to the Database
 func ConnectionDB() *mongo.Client {
